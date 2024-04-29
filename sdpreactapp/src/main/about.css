@@ -1,0 +1,86 @@
+.img {
+    background: url("C:\Users\Sadia\Desktop\MSWD\sdp\sdp\frontendapp\sdpreactapp\src\main\photo_2024-04-27_06-14-08.jpg") no-repeat;
+    width: 120vh; /* Remove width to maintain the original size of the image */
+    height: 100vh; /* Adjusted to cover the full height of the viewport */
+    background-size: contain; /* Use contain to fit the image within the container */
+    background-position: center; /* Position the background image to the left and center vertically */
+    position: fixed; /* Use fixed positioning to ensure the image stays in the background */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .img::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .center {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    padding: 0 20px;
+    text-align: left;
+  }
+  
+  .center .title {
+    color: #ed1010;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto; /* Align text to the center */
+  }
+  
+  .center .sub_title {
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    left: 50%;
+    margin-top: 10px;
+  }
+  
+  .center .btns {
+    margin-top: 20px;
+  }
+  
+  .center .btns button {
+    height: 55px;
+    width: 170px;
+    border-radius: 10px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid rgb(230, 22, 22);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .center .btns button:first-child {
+    color: #fff;
+    background: none;
+  }
+  
+  .btns button:first-child:hover {
+    background: white;
+    color: black;
+  }
+  
+  .center .btns button:last-child {
+    background: white;
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
